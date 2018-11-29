@@ -70,6 +70,13 @@ class Students extends Person {
     sprintChallenge(subject){
         console.log(`${Students.name} has begun sprint challenge on ${subject}`)
     }
+    grade(){
+        function range(start, end) {
+            return Array(end - start + 1).fill().map((_, idx) => start + idx)
+          }
+          var result = range(1, 100); 
+          console.log(result);
+    }
 }
 
 const Henry = new Students({
