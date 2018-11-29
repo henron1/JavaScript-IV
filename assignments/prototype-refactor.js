@@ -16,7 +16,7 @@ class GameObject{
     destroy(){
     return 'Object was removed from the game.'
   }
-}
+} 
 
   class CharacterStats extends GameObject{
       constructor (CharacterStatsAttributes){
@@ -33,9 +33,9 @@ class GameObject{
 class Humanoid extends CharacterStats {
     constructor(HumanoidAttributes){
     super(HumanoidAttributes)
-    this.team =attributes.team;
-    this.weapons = attributes.weapons;
-    this.language = attributes.language;
+    this.team =HumanoidAttributes.team;
+    this.weapons = HumanoidAttributes.weapons;
+    this.language = HumanoidAttributes.language;
   }
   greet(){
     return `${this.name} offers a greeting in ${this.language}.`
